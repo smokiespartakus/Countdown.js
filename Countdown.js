@@ -1,4 +1,4 @@
-function CountDown(seconds, endText, onlySeconds, hideWhenZero, callback) {
+function Countdown(seconds, endText, onlySeconds, hideWhenZero, callback) {
 	var _self = this;
 	var paused = false;
 	var running = true;

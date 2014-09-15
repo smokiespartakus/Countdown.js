@@ -1,0 +1,19 @@
+<!doctype html>
+<html>
+<head>
+<link href='Countdown.css' rel='stylesheet' type='text/css'>
+
+<script src="http://code.jquery.com/jquery-2.0.0.min.js"></script>
+<script src="Countdown.js"></script>
+<script type="text/javascript">
+var cd;
+$(document).ready(function() {
+	cd = new Countdown(10000, 'The end', false, true, function( cdobj ){ console.log('countdown is done')});
+	// add to element
+	$('body').append(cd.getJQ());
+})
+</script>
+</head>
+<body>
+</body>
+</html>
