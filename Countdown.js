@@ -77,7 +77,7 @@ function Countdown(seconds, endText, onlySeconds, hideWhenZero, callback) {
 		var time = new Date().getTime() / 1000;
 		var showSeconds = seconds - parseInt((time - startTime));
 		if (showSeconds <= 0) {
-			$countdown.html('' + endText);
+			if (endText) $countdown.html(endText);
 			if( callback ) callback(_self);
 			return;
 		}
